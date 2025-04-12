@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QuizPro | Professional Assessment Platform</title>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Quiz<span>Pro</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Demo</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-outline">Log In</a>
+                <a href="#" class="btn btn-primary">Start Free Trial</a>
+            </div>
+            <div class="mobile-menu-toggle" id="openMenu">☰</div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="logo">Quiz<span>Pro</span></div>
+            <div class="close-menu" id="closeMenu">✕</div>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Demo</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-buttons">
+            <a href="#" class="btn btn-outline">Log In</a>
+            <a href="#" class="btn btn-primary">Start Free Trial</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Professional Assessments for Modern Teams</h1>
+                <p>Create customized quizzes and assessments to evaluate skills, knowledge, and compatibility with your
+                    organization's needs.</p>
+                <a href="#" class="btn btn-primary">Create Your First Quiz</a>
+            </div>
+            <div class="hero-image">
+                <img src="imgs/ChatGPT Image 11 أبريل 2025، 07_10_10 م.png" alt="Assessment Platform Demo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose QuizPro</h2>
+                <p>Our comprehensive assessment platform helps you make better hiring decisions and evaluate team skills
+                    efficiently.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">✓</div>
+                    <h3>Customized Assessments</h3>
+                    <p>Create tailor-made quizzes to evaluate specific skills and knowledge required for any role in
+                        your organization.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>In-depth Analytics</h3>
+                    <p>Gain valuable insights with comprehensive reports and analytics on candidate performance and
+                        skill gaps.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Anti-cheating Technology</h3>
+                    <p>Ensure assessment integrity with our advanced proctoring and anti-cheating features.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Quick Setup</h3>
+                    <p>Get started in minutes with our intuitive platform and ready-to-use assessment templates.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Global Accessibility</h3>
+                    <p>Reach candidates anywhere with our multilingual support and cloud-based platform.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Seamless Integration</h3>
+                    <p>Connect with your existing HR tools and applicant tracking systems for a streamlined workflow.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Demo Section -->
+    <section class="quiz-section">
+        <div class="container">
+            <div class="quiz-container">
+                <div class="quiz-header">
+                    <h2>Html Knowledge Assessment</h2>
+                    <p>Question <span id="currentQuestionIndexSpan"></span> of <span id="questionsNum"></span> </p>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="question">
+                    <h3 id="question-title">
+                    </h3>
+                    <div class="options">
+                        <div class="option">
+                            <div class="option-radio"></div>
+                            <span id="option-1"></span>
+                        </div>
+                        <div class="option selected">
+                            <div class="option-radio"></div>
+                            <span id="option-2"></span>
+                        </div>
+                        <div class="option">
+                            <div class="option-radio"></div>
+                            <span id="option-3"></span>
+                        </div>
+                        <div class="option">
+                            <div class="option-radio"></div>
+                            <span id="option-4"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz-controls">
+                    <button class="btn btn-outline previous">Previous</button>
+                    <button class="btn btn-primary next">Next Question</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">QuizPro</div>
+                    <p>Professional assessment platform designed to help companies evaluate candidates effectively and
+                        make better hiring decisions.</p>
+                    <div class="social-links">
+                        <a href="#">f</a>
+                        <a href="#">t</a>
+                        <a href="#">in</a>
+                        <a href="#">ig</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Webinars</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Legal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 QuizPro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Axios cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- main script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
