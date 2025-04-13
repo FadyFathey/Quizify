@@ -25,7 +25,7 @@
             </nav>
             <div class="auth-buttons">
                 <a href="#" class="btn btn-outline">Log In</a>
-                <a href="#" class="btn btn-primary">Start Free Trial</a>
+                <a href="#quizMain" class="btn btn-primary">Start Free Trial</a>
             </div>
             <div class="mobile-menu-toggle" id="openMenu">☰</div>
         </div>
@@ -57,7 +57,7 @@
                 <h1>Professional Assessments for Modern Teams</h1>
                 <p>Create customized quizzes and assessments to evaluate skills, knowledge, and compatibility with your
                     organization's needs.</p>
-                <a href="#" class="btn btn-primary">Create Your First Quiz</a>
+                <a href="#quizMain" class="btn btn-primary">Create Your First Quiz</a>
             </div>
             <div class="hero-image">
                 <img src="imgs/ChatGPT Image 11 أبريل 2025، 07_10_10 م.png" alt="Assessment Platform Demo">
@@ -112,7 +112,7 @@
     </section>
 
     <!-- Quiz Demo Section -->
-    <section class="quiz-section">
+    <section id="quizMain" class="quiz-section">
         <div class="container">
             <div class="quiz-container">
                 <div class="quiz-header">
@@ -130,7 +130,7 @@
                             <div class="option-radio"></div>
                             <span id="option-1"></span>
                         </div>
-                        <div class="option selected">
+                        <div class="option ">
                             <div class="option-radio"></div>
                             <span id="option-2"></span>
                         </div>
@@ -151,6 +151,114 @@
             </div>
         </div>
     </section>
+    <!-- results -->
+    <div class="results-container">
+        <div class="results-header">
+            <h2>Assessment Results</h2>
+            <p>HTML Knowledge Assessment</p>
+        </div>
+
+        <div class="score-circle">
+            <div class="score-text">70<span>%</span></div>
+        </div>
+
+        <div class="score-details">
+            <div class="score-item">
+                <div class="score-value correct">7</div>
+                <div class="score-label">Correct</div>
+            </div>
+            <div class="score-item">
+                <div class="score-value incorrect">3</div>
+                <div class="score-label">Incorrect</div>
+            </div>
+            <div class="score-item">
+                <div class="score-value unanswered">0</div>
+                <div class="score-label">Unanswered</div>
+            </div>
+        </div>
+
+        <div class="results-message">
+            <h3>Good knowledge of HTML!</h3>
+            <p>You demonstrated a solid understanding of HTML elements and their usage. To further improve, consider
+                reviewing some of the advanced HTML5 features and semantic elements.</p>
+        </div>
+
+        <div class="results-actions">
+            <!-- <button class="btn btn-outline">Review Answers</button>
+            <button class="btn btn-primary">Share Results</button> -->
+            <button class="btn btn-success">Take New Quiz</button>
+        </div>
+
+        <!-- Answer Review Section -->
+        <div class="answer-review">
+            <h3>Review Your Answers</h3>
+
+            <div class="review-question">
+                <h4>
+                    <span class="status correct">✓</span>
+                    Which HTML element is used to define the title of a document?
+                </h4>
+                <div class="review-choices">
+                    <div class="review-choice">
+                        <span class="choice-letter">A</span>
+                        <span>The &lt;head&gt; element</span>
+                    </div>
+                    <div class="review-choice correct">
+                        <span class="choice-letter">B</span>
+                        <span>The &lt;title&gt; element</span>
+                    </div>
+                    <div class="review-choice">
+                        <span class="choice-letter">C</span>
+                        <span>The &lt;header&gt; element</span>
+                    </div>
+                    <div class="review-choice">
+                        <span class="choice-letter">D</span>
+                        <span>The &lt;meta&gt; element</span>
+                    </div>
+                </div>
+                <div class="explanation">
+                    <h5>Explanation:</h5>
+                    <p>The &lt;title&gt; element defines the title of the HTML document which appears in the browser's
+                        title bar or tab. The &lt;head&gt; element is a container for metadata, the &lt;header&gt; is
+                        used for introductory content or navigation, and &lt;meta&gt; provides metadata about the HTML
+                        document.</p>
+                </div>
+            </div>
+
+            <div class="review-question">
+                <h4>
+                    <span class="status incorrect">✗</span>
+                    Which attribute is used to specify an alternate text for an image?
+                </h4>
+                <div class="review-choices">
+                    <div class="review-choice">
+                        <span class="choice-letter">A</span>
+                        <span>src</span>
+                    </div>
+                    <div class="review-choice incorrect selected">
+                        <span class="choice-letter">B</span>
+                        <span>title</span>
+                    </div>
+                    <div class="review-choice correct">
+                        <span class="choice-letter">C</span>
+                        <span>alt</span>
+                    </div>
+                    <div class="review-choice">
+                        <span class="choice-letter">D</span>
+                        <span>href</span>
+                    </div>
+                </div>
+                <div class="explanation">
+                    <h5>Explanation:</h5>
+                    <p>The alt attribute specifies an alternate text for an image, which is displayed if the image
+                        cannot be loaded or for accessibility purposes with screen readers. The src attribute specifies
+                        the URL of the image, title provides additional information displayed as a tooltip, and href is
+                        used for links, not images.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Footer -->
     <footer>
@@ -158,7 +266,8 @@
             <div class="footer-content">
                 <div class="footer-about">
                     <div class="footer-logo">QuizPro</div>
-                    <p>Professional assessment platform designed to help companies evaluate candidates effectively and
+                    <p>Professional assessment platform designed to help companies evaluate candidates effectively
+                        and
                         make better hiring decisions.</p>
                     <div class="social-links">
                         <a href="#">f</a>
@@ -200,7 +309,13 @@
             </div>
         </div>
     </footer>
-
+    <!-- custom alert  -->
+    <div class="alert-container" id="alertContainer">
+        <div class="alert alert-warning" id="alertBox">
+            <div class="alert-icon">⚠</div>
+            <div class="alert-message">Please select an answer before continuing.</div>
+        </div>
+    </div>
     <!-- Axios cdn -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- main script -->
